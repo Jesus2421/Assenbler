@@ -1,0 +1,42 @@
+MPLINK 4.37, Linker
+Linker Map File - Created Tue Sep 26 13:00:33 2017
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000000
+                   .org_1       code   0x000000    program   0x000032
+.config_2007_JUEGODELUCES.O       code   0x002007    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000018      
+                            0x002007    0x002007      
+            26 out of 1093 program addresses used, program memory utilization is 2%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                      DEC   0x000011    program     static C:\Users\Familia campos\Documents\ASSENBLER\Juegodeluces.asm
+                     DEC1   0x000014    program     static C:\Users\Familia campos\Documents\ASSENBLER\Juegodeluces.asm
+                     DEC2   0x000016    program     static C:\Users\Familia campos\Documents\ASSENBLER\Juegodeluces.asm
+                   INICIO   0x000003    program     static C:\Users\Familia campos\Documents\ASSENBLER\Juegodeluces.asm
+                  RETARDO   0x00000f    program     static C:\Users\Familia campos\Documents\ASSENBLER\Juegodeluces.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   INICIO   0x000003    program     static C:\Users\Familia campos\Documents\ASSENBLER\Juegodeluces.asm
+                  RETARDO   0x00000f    program     static C:\Users\Familia campos\Documents\ASSENBLER\Juegodeluces.asm
+                      DEC   0x000011    program     static C:\Users\Familia campos\Documents\ASSENBLER\Juegodeluces.asm
+                     DEC1   0x000014    program     static C:\Users\Familia campos\Documents\ASSENBLER\Juegodeluces.asm
+                     DEC2   0x000016    program     static C:\Users\Familia campos\Documents\ASSENBLER\Juegodeluces.asm
+
+

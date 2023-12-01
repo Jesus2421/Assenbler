@@ -1,0 +1,123 @@
+MPASM  5.37                           LED.ASM   9-26-2017  11:53:24         PAGE  1
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+Warning[205]: Found directive in column 1. (list)
+                      00001 list p=16f84
+Warning[205]: Found directive in column 1. (include)
+                      00002 include <p16f84A.inc>
+                      00001         LIST
+                      00002 ; P16F84A.INC  Standard Header File, Version 2.00    Microchip Technology, Inc.
+                      00134         LIST
+  0000000C            00003 TIEMPO EQU 0x0C
+0000                  00004         org 0
+0000   1683           00005         bsf STATUS,RP0 ; que se coloque en uno el bit RP0=BANCO 1
+0001   0186           00006         CLRF PORTB ; SALIDA
+0002   1283           00007         bcf STATUS,RP0
+                      00008 ; ZONA DE CODIGO
+0003   1006           00009 INICIO         BCF PORTB , 0 ; coloca en 1 el pim 0del puerto b 
+0004   2007           00010                CALL RETARDO
+0005   1406           00011                BSF PORTB,0
+0006   2803           00012                GOTO INICIO
+0007                  00013 RETARDO
+0007   30FF           00014           MOVLW D'255' 
+0008   080C           00015           MOVFW TIEMPO ;TIEMPO=255
+Message[305]: Using default destination of 1 (file).
+0009   0B8C           00016 DEC       DECFSZ TIEMPO
+000A   2809           00017           GOTO DEC
+000B   0008           00018           RETURN
+Warning[205]: Found directive in column 1. (END)
+                      00019 END 
+MPASM  5.37                           LED.ASM   9-26-2017  11:53:24         PAGE  2
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+C                                 00000000
+DC                                00000001
+DEC                               00000009
+EEADR                             00000009
+EECON1                            00000088
+EECON2                            00000089
+EEDATA                            00000008
+EEIE                              00000006
+EEIF                              00000004
+F                                 00000001
+FSR                               00000004
+GIE                               00000007
+INDF                              00000000
+INICIO                            00000003
+INTCON                            0000000B
+INTE                              00000004
+INTEDG                            00000006
+INTF                              00000001
+IRP                               00000007
+NOT_PD                            00000003
+NOT_RBPU                          00000007
+NOT_TO                            00000004
+OPTION_REG                        00000081
+PCL                               00000002
+PCLATH                            0000000A
+PORTA                             00000005
+PORTB                             00000006
+PS0                               00000000
+PS1                               00000001
+PS2                               00000002
+PSA                               00000003
+RBIE                              00000003
+RBIF                              00000000
+RD                                00000000
+RETARDO                           00000007
+RP0                               00000005
+RP1                               00000006
+STATUS                            00000003
+T0CS                              00000005
+T0IE                              00000005
+T0IF                              00000002
+T0SE                              00000004
+TIEMPO                            0000000C
+TMR0                              00000001
+TRISA                             00000085
+TRISB                             00000086
+W                                 00000000
+WR                                00000001
+WREN                              00000002
+WRERR                             00000003
+Z                                 00000002
+_CP_OFF                           00003FFF
+_CP_ON                            0000000F
+MPASM  5.37                           LED.ASM   9-26-2017  11:53:24         PAGE  3
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+_HS_OSC                           00003FFE
+_LP_OSC                           00003FFC
+_PWRTE_OFF                        00003FFF
+_PWRTE_ON                         00003FF7
+_RC_OSC                           00003FFF
+_WDT_OFF                          00003FFB
+_WDT_ON                           00003FFF
+_XT_OSC                           00003FFD
+__16F84A                          00000001
+
+
+MEMORY USAGE MAP ('X' = Used,  '-' = Unused)
+
+0000 : XXXXXXXXXXXX---- ---------------- ---------------- ----------------
+
+All other memory blocks unused.
+
+Program Memory Words Used:    12
+Program Memory Words Free:  1012
+
+
+Errors   :     0
+Warnings :     3 reported,     0 suppressed
+Messages :     1 reported,     0 suppressed
+
+

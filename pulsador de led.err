@@ -1,5 +1,0 @@
-Warning[205] H:\PROGRAMACION\ASSENBLER\PULSADOR DE LED.ASM 1 : Found directive in column 1. (list)
-Warning[205] H:\PROGRAMACION\ASSENBLER\PULSADOR DE LED.ASM 2 : Found directive in column 1. (include)
-Message[302] H:\PROGRAMACION\ASSENBLER\PULSADOR DE LED.ASM 8 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] H:\PROGRAMACION\ASSENBLER\PULSADOR DE LED.ASM 9 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Warning[205] H:\PROGRAMACION\ASSENBLER\PULSADOR DE LED.ASM 20 : Found directive in column 1. (END)
